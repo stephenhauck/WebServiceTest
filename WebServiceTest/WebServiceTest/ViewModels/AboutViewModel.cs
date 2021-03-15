@@ -28,7 +28,7 @@ namespace WebServiceTest.ViewModels
                     //Standard header
                     client.DefaultRequestHeaders.Add("Accept", "application/json");
                     //Assemble the URL to call 
-                    string urlPath = $"http://10.0.2.2:5000/api/APIEndpoint";
+                    string urlPath = $"http://10.0.2.2:5000/api/Item";
 
                     //Encode the POST payload 
                     var keystylePostContent = new StringContent(JsonConvert.SerializeObject(new Item()), Encoding.UTF8, "application/json");
